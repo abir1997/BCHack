@@ -1,12 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MyComponent from './Booking_Confirmation.js';
+
+import CostComponent from './Components/CostComponent';
+import Navbar from './Components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <MyComponent />
+
+      <Navbar />
+      <CostComponent />
     </div>
   );
 }
