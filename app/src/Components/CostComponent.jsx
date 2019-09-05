@@ -47,7 +47,6 @@ class CostComponent extends Component {
             </div>
             
                 </div>
-            {this.state.shareReq && <div><MemberListComponent/></div>}
 
                 </div>
                 
