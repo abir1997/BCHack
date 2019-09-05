@@ -9,11 +9,11 @@ class BCtable extends Component {
         // Here is the data for the table rows. Pay attention to have the same key name as the one in your columns array!
         const products = [{
             People: "Adam",
-            "Share(AUD)": "70$",
+            "Share(AUD)": "240$",
         },
         {
             People: "Darwin",
-            "Share(AUD)": "30$",
+            "Share(AUD)": "240$",
         }];
 
         return (

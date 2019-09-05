@@ -13,15 +13,16 @@ const MyComponent = () => (
         top: "12%" ,
         left: "33%"
         }}>
-
         <div >
-            <Card style={{ boxShadow: "0 10px 20px #0003", border: "none" }} title="Hotel XYZ">
+            <Card style={{ boxShadow: "0 10px 20px #0003", border: "none" }} title="FlyAway Internationals">
+                
                 <p>Booking Confirmed!</p>
-                <Icon type="userCheck" size="140px" color="#01b875" />
+                <Icon type="userCheck" size="140px" color="#0000FF" />
                 <BCtable />
-                <p>Destination : Bali</p>
-                <p>Total : 100$</p>
-                <Button type="success" outlined round >OK</Button>
+                <p>Destination : Bali &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; From : MEL</p>
+                <p>Total : 480$</p>
+                {/* <Button type="success" outlined round >OK</Button> */}
+                <Button outlined round colors={{ mainColor: "#0000FF", secondColor: "#0000FF" }}>OK</Button>
             </Card>
         </div>
     </div>
