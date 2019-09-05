@@ -76,7 +76,7 @@ const ConfirmationCard = props => {
         >
           <div
             className="takeoff"
-            style={{ width: "500px", display: "flex", flexDirection: "row" }}
+            style={{ width: "100%", display: "flex", flexDirection: "row" }}
           >
             <div className="traveldate">
               <h4
@@ -86,11 +86,11 @@ const ConfirmationCard = props => {
                   fontWeight: "300",
                   fontSize: "20px",
                   padding: "10px",
-                  marginRight: "100px",
-                  marginTop: "75px"
+                  marginRight: "75px",
+                  marginTop: "50px"
                 }}
               >
-                27 Aug
+                27 Aug 2019
               </h4>
             </div>
             <div className="toandfrom">
@@ -101,8 +101,8 @@ const ConfirmationCard = props => {
                   fontWeight: "300",
                   fontSize: "20px",
                   padding: "10px",
-                  marginLeft: "100px",
-                  marginTop: "75px"
+                  marginLeft: "75px",
+                  marginTop: "50px"
                 }}
               >
                 MEL <MdFlightTakeoff /> BALI
@@ -111,7 +111,7 @@ const ConfirmationCard = props => {
           </div>
           <div
             className="landon"
-            style={{ width: "500px", display: "flex", flexDirection: "row" }}
+            style={{ width: "100%", display: "flex", flexDirection: "row" }}
           >
             <div className="traveldate">
               <h4
@@ -121,11 +121,10 @@ const ConfirmationCard = props => {
                   fontWeight: "300",
                   fontSize: "20px",
                   padding: "10px",
-                  marginRight: "100px",
-                  marginTop: "50px"
+                  marginRight: "75px"
                 }}
               >
-                04 Sep
+                04 Sep 2019
               </h4>
             </div>
             <div className="toandfrom">
@@ -136,13 +135,78 @@ const ConfirmationCard = props => {
                   fontWeight: "300",
                   fontSize: "20px",
                   padding: "10px",
-                  marginLeft: "100px",
-                  marginTop: "50px"
+                  marginLeft: "75px"
                 }}
               >
                 BALI <MdFlightLand /> MEL
               </h4>
             </div>
+          </div>
+        </div>
+        <div
+          className="detailDiv"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            height: "50px",
+            width: "100%"
+          }}
+        >
+          <div style={{ width: "100%" }}>
+            <h4
+              style={{
+                textAlign: "center",
+                fontFamily: "Source Sans Pro, sans-serif",
+                fontWeight: "100",
+                fontSize: "1em",
+                width: "100%",
+                height: "100%",
+                verticalAlign: "center"
+              }}
+            >
+              You and 1 other traveller
+            </h4>
+          </div>
+        </div>
+        <div
+          className="priceDiv"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            height: "100px",
+            marginTop: "25px"
+          }}
+        >
+          <div>
+            <h4
+              style={{
+                textAlign: "center",
+                fontFamily: "Source Sans Pro, sans-serif",
+                fontWeight: "100",
+                padding: "10px",
+                marginRight: "100px",
+                fontSize: "1.5em",
+                marginTop: "70px"
+              }}
+            >
+              Total:
+            </h4>
+          </div>
+          <div>
+            <h4
+              style={{
+                textAlign: "center",
+                fontFamily: "Montserrat,Helvetica,Arial,sans-serifs",
+                fontWeight: "200",
+                padding: "10px",
+                marginLeft: "115px",
+                color: "#006eff",
+                fontSize: "2.5em",
+                textAlign: "center"
+              }}
+            >
+              $240
+            </h4>
           </div>
         </div>
         <SwitchNotify />
