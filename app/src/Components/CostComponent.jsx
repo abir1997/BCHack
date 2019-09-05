@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../bootstrap.css';
+import MemberListComponent from './MemberListComponent';
 
 class CostComponent extends Component {
 
@@ -8,15 +9,21 @@ class CostComponent extends Component {
         super(props);
 
         this.state = {
-            moreMembersClicked : false
+            moreMembersClicked : false,
+            shareReq : false
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.sendClicked = this.sendClicked.bind(this);
     }
 
 
     handleChange(event){
         this.setState({moreMembersClicked : true})
+    }
+
+    sendClicked(event){
+        this.setState({shareReq:true})
     }
 
     render() {
@@ -31,15 +38,19 @@ class CostComponent extends Component {
                     <p class="card-text">Location : 55 William St, Perth</p>
                     <p class="card-text">Cost : $500</p>
                     <button className="btn btn-success" onClick={this.handleChange}>Add more members</button> <br></br> <br></br>
-                    {this.state.moreMembersClicked && <div><p>  User Name: <input type="text" name="username" /> </p></div>}             
+                    {this.state.moreMembersClicked && <div>Email: <input type="text" name="username" /></div>}             
                   
                     
                 </div>
                 <div class="card-footer text-muted">
-                    2 days ago
+                <button className="btn btn-primary" onClick={this.sendClicked}>Send Share Request</button> <br></br> <br></br>
             </div>
+            
                 </div>
+            {this.state.shareReq && <div><MemberListComponent/></div>}
+
                 </div>
+                
         );
     }
 }
