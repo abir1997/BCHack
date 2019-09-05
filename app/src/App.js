@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import ConfirmationCard from "./Confirmation.js";
+import CostComponent from "./Components/CostComponent";
+import Navbar from "./Components/Navbar";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="mainDiv">
-        <ConfirmationCard />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <CostComponent />
+    </div>
+  );
 }
 
 // ReactDOM.render(<App />, document.getElementById("app"));
