@@ -8,16 +8,7 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -30,4 +21,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list-group-item{
+  color : #006eff;
+  font-size: 2rem;
+}
+
+.card{
+  box-shadow: 6px 6px 10px lightgray;
+}
+
+.container{
+  padding-top: 5%;
+}
+
+li span{
+  color:darkgray;
+}
+
+.cc{
+  width : 40%;
 }
