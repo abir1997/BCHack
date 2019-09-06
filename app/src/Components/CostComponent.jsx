@@ -29,13 +29,11 @@ class CostComponent extends Component {
 
     render() {
         return (
-            <div class="container">
-                <div class="txt-holder">
-                    <h2>Hi Tom, you can now split the cost with your mates</h2>
-                </div>
+            <div class="container cc">
+
                 <div className="card text-center">
                     <div class="card-header">
-                        Hotel : Watercrest
+                        Flight ticket to Bali
                 </div>
                     <div class="card-body">
                         <h5 class="card-title">Trip date : 25th August 2019</h5>

@@ -31,13 +31,41 @@ class MyComponent extends React.Component {
 
                         <p>Booking Confirmed!</p>
                         <Icon type="userCheck" size="140px" color="#006eff" />
-                        <li class="list-group-item"><span>Destination :</span>Bali <br></br>
+                        {/* <li class="list-group-item"><span>Destination :</span>Bali <br></br>
                             <span>From :</span> : Melbourne</li>
                         <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item"><span>Tom :</span> $250  <span>Larry :</span> $250</li>
+                            <li class="list-group-item"><span>Tom :</span> $250 &nbsp; <span>Larry :</span> $250</li>
                             <li class="list-group-item"></li>
                             <li class="list-group-item"><span>Total :</span> $500</li>
-                        </ul>
+                        </ul> */}
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">To</th>
+                                    <td scope="col">Bali</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>From</th>
+                                    <td>Melbourne</td>
+                                </tr>
+                                <tr>
+                                    <td>Tom</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td>Larry</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <td>$500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         {/* <Button type="success" outlined round >OK</Button> */}
                         <br></br>
                         {/* <Button outlined round colors={{ mainColor: "#006eff", secondColor: "#0000FF" }} onClick={this.handleChange}>OK</Button>*/}

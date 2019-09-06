@@ -179,25 +179,24 @@ class ConfirmationCard extends React.Component {
                   verticalAlign: "center"
                 }}
               >
-                You and 2 other travellers
+                You and 1 other traveller
             </h4>
             </div>
           </div>
           <div className="flex-container">
             <ul class="list-group list-group-horizontal-lg">
               <li class="list-group-item">Total Cost :$500</li>
-              <li class="list-group-item">You pay : $250</li>
+              <li class="list-group-item"><small>You pay : $250</small></li>
             </ul>
           </div>
           
           <div className="stuff">
-          <SwitchNotify />
           <div
             style={{
               display: "flex",
-              position: "absolute",
-              right: "35px",
-              bottom: "60px"
+  height: "300px",
+  justifyContent: "center",
+  alignItems: "center"
             }}
           >
             <Button round type="primary" onClick={this.handleChange}>

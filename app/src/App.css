@@ -36,6 +36,10 @@
   padding-top: 5%;
 }
 
-span{
+li span{
   color:darkgray;
+}
+
+.cc{
+  width : 40%;
 }
