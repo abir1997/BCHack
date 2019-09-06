@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../bootstrap.css';
 import '../App.css';
+import { MdFlightTakeoff, MdFlightLand } from "react-icons/md";
 import MemberListComponent from './MemberListComponent';
 
 class CostComponent extends Component {
@@ -30,14 +31,14 @@ class CostComponent extends Component {
     render() {
         return (
             <div class="container cc">
-
+                
                 <div className="card text-center">
                     <div class="card-header">
                         Flight ticket to Bali
                 </div>
                     <div class="card-body">
-                        <h5 class="card-title">Trip date : 25th August 2019</h5>
-                        <p class="card-text">Location : 55 William St, Perth</p>
+                  
+                        <h5 class="card-title">Trip details : MELB to BALI (27 Aug - 05 Sept)</h5>
                         <p class="card-text">Cost : $500</p>
                         <button className="btn btn-success" onClick={this.handleChange}>Add more members</button> <br></br> <br></br>
                         {this.state.moreMembersClicked && <div>Email: <input type="text" name="username" /></div>}
