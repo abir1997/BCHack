@@ -30,12 +30,17 @@ class MyComponent extends React.Component {
                     <Card style={{ boxShadow: "0 10px 20px #0003", border: "none" }} title="FlyAway Internationals">
 
                         <p>Booking Confirmed!</p>
-                        <Icon type="userCheck" size="140px" color="#0000FF" />
-                        <BCtable />
-                        <p>Destination : Bali &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; From : MEL</p>
-                        <p>Total : 480$</p>
+                        <Icon type="userCheck" size="140px" color="#006eff" />
+                        <li class="list-group-item"><span>Destination :</span>Bali <br></br>
+                            <span>From :</span> : Melbourne</li>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item"><span>Tom :</span> $250  <span>Larry :</span> $250</li>
+                            <li class="list-group-item"></li>
+                            <li class="list-group-item"><span>Total :</span> $500</li>
+                        </ul>
                         {/* <Button type="success" outlined round >OK</Button> */}
-                        <Button outlined round colors={{ mainColor: "#0000FF", secondColor: "#0000FF" }} onClick={this.handleChange}>OK</Button>
+                        <br></br>
+                        {/* <Button outlined round colors={{ mainColor: "#006eff", secondColor: "#0000FF" }} onClick={this.handleChange}>OK</Button>*/}
                     </Card>
                 </div>
             </div>

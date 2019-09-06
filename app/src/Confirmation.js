@@ -1,19 +1,19 @@
 import React from "react";
 import { Card, Button } from "flwww";
 import SwitchNotify from "./Notify";
+import "./App.css"
 import { Icon } from "flwww";
 import { MdFlightTakeoff, MdFlightLand } from "react-icons/md";
-import { tsConstructorType } from "@babel/types";
 
 class ConfirmationCard extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event){
+  handleChange(event) {
     this.props.history.push(`./booking`);
   }
 
@@ -65,6 +65,7 @@ class ConfirmationCard extends React.Component {
                 height: "50px"
               }}
             >
+              
               <h2
                 style={{
                   fontFamily: "Source Sans Pro, sans-serif",
@@ -79,6 +80,7 @@ class ConfirmationCard extends React.Component {
                 One step away
             </h2>
             </div>
+            
           </div>
           <div
             className="flightDetails"
@@ -177,64 +179,33 @@ class ConfirmationCard extends React.Component {
                   verticalAlign: "center"
                 }}
               >
-                You and 1 other traveller
+                You and 2 other travellers
             </h4>
             </div>
           </div>
-          <div
-            className="priceDiv"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              height: "100px",
-              marginTop: "25px"
-            }}
-          >
-            <div>
-              <h4
-                style={{
-                  textAlign: "center",
-                  fontFamily: "Source Sans Pro, sans-serif",
-                  fontWeight: "100",
-                  padding: "10px",
-                  marginRight: "100px",
-                  fontSize: "1.5em",
-                  marginTop: "70px"
-                }}
-              >
-                Total:
-            </h4>
-            </div>
-            <div>
-              <h4
-                style={{
-                  textAlign: "center",
-                  fontFamily: "Montserrat,Helvetica,Arial,sans-serifs",
-                  fontWeight: "200",
-                  padding: "10px",
-                  marginLeft: "115px",
-                  color: "#006eff",
-                  fontSize: "2.5em",
-                  textAlign: "center"
-                }}
-              >
-                $240
-            </h4>
-            </div>
+          <div className="flex-container">
+            <ul class="list-group list-group-horizontal-lg">
+              <li class="list-group-item">Total Cost :$500</li>
+              <li class="list-group-item">You pay : $250</li>
+            </ul>
           </div>
+          
+          <div className="stuff">
           <SwitchNotify />
           <div
             style={{
               display: "flex",
               position: "absolute",
               right: "35px",
-              bottom: "70px"
+              bottom: "60px"
             }}
           >
             <Button round type="primary" onClick={this.handleChange}>
               Confirm
           </Button>
           </div>
+      </div>
+
         </Card>
       </div>
     );
