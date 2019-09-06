@@ -23,7 +23,7 @@ class CostComponent extends Component {
     }
 
     sendClicked(event){
-        this.setState({shareReq:true})
+        this.props.history.push(`../confirmation`);
     }
 
     render() {
